@@ -7,7 +7,7 @@ it("should render same test passed into title prop", () => {
   expect(headingEle).toBeInTheDocument();
 });
 
-// it("should render same test passed into title prop", () => {
+// it("should render same test passSed into title prop", () => {
 //   render(<Header title="My header" />);
 //   const headingEle = screen.getByRole("heading");
 //   expect(headingEle).toBeInTheDocument();
@@ -19,11 +19,11 @@ it("should render same test passed into title prop", () => {
   expect(headingEle).toBeInTheDocument();
 });
 
-it("should render same test passed into title prop", () => {
-  render(<Header title="My Header" />);
-  const headingEle = screen.getByTitle("Header", { name: "My Header" });
-  expect(headingEle).toBeInTheDocument();
-});
+// it("should render same test passed into title prop", () => {
+//   render(<Header title="My Header" />);
+//   const headingEle = screen.getByTitle("Header", { name: "My Header" });
+//   expect(headingEle).toBeInTheDocument();
+// });
 
 it("should render same test passed into title prop", () => {
   render(<Header title="My Header" />);
@@ -50,5 +50,5 @@ it("should render same test passed into title prop", async () => {
 it("should render same test passed into title prop", async () => {
   render(<Header title="My header" />);
   const headingEles = screen.getAllByRole("heading");
-  expect(headingEles.length).toBe(2);
+  expect(headingEles.length).toBe(1);
 });
